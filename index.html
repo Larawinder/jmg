@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO primário -->
+  <title>JGM Construções — Reforma e Construção em Curitiba e Região</title>
+  <meta name="description"
+    content="JGM Construções: empresa especializada em reformas residenciais, comerciais e obras novas em Curitiba e Região Metropolitana do Paraná. Solicite seu orçamento grátis pelo WhatsApp." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="[EDITAR: URL do site]" />
+  <meta property="og:title" content="JGM Construções — Reforma e Construção em Curitiba e Região" />
+  <meta property="og:description"
+    content="Reformas residenciais, comerciais e obra nova em Curitiba e RMC. Orçamento grátis via WhatsApp." />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JGM Construções — Reforma e Construção em Curitiba" />
+  <meta name="twitter:description"
+    content="Reformas residenciais, comerciais e obra nova. Curitiba e Região Metropolitana." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "JGM Construções",
+    "description": "Empresa de reforma e construção civil em Curitiba e Região Metropolitana do Paraná. Serviços residenciais e comerciais.",
+    "url": "[EDITAR: URL do site]",
+    "telephone": "[EDITAR: telefone com DDI, ex: +55 41 99999-9999]",
+    "email": "[EDITAR: e-mail]",
+    "priceRange": "$$",
+    "areaServed": [
+      "Curitiba", "Almirante Tamandaré", "Colombo", "Pinhais",
+      "São José dos Pinhais", "Araucária", "Campo Largo",
+      "Campo Magro", "Rio Branco do Sul"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Curitiba",
+      "addressRegion": "PR",
+      "addressCountry": "BR",
+      "streetAddress": "[EDITAR: endereço se quiser exibir]"
+    },
+    "sameAs": [
+      "[EDITAR: URL Instagram]",
+      "[EDITAR: URL Facebook]"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       HEADER FIXO
+  ══════════════════════════════════════════════ -->
+  <header id="header" class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="JGM Construções — página inicial">
+        <img src="assets/logo-header.png" alt="Logo JGM Construções" height="52" />
+      </a>
+
+      <nav class="header__nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#obras">Obras</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn--laranja btn--sm header__cta js-whatsapp"
+        data-msg="Olá! Gostaria de solicitar um orçamento da JGM Construções."
+        aria-label="Solicitar orçamento via WhatsApp">
+        Orçamento no WhatsApp
+      </a>
+
+      <button class="header__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════
+         1. HERO
+    ══════════════════════════════════════════════ -->
+    <section id="inicio" class="hero">
+      <!-- TROCAR: foto real de obra/reforma como background-image no CSS -->
+      <div class="hero__overlay"></div>
+      <div class="container hero__content reveal">
+        <span class="hero__badge">Atendemos Curitiba e Região Metropolitana</span>
+        <h1 class="hero__title">Construímos e reformamos<br />do projeto à entrega</h1>
+        <p class="hero__sub">
+          Reforma residencial, obra nova ou acabamento: a JGM Construções cuida de tudo
+          com qualidade, prazo e orçamento justo em Curitiba e toda a região.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--laranja btn--lg js-whatsapp"
+            data-msg="Olá! Gostaria de solicitar um orçamento da JGM Construções."
+            aria-label="Pedir orçamento pelo WhatsApp">
+            Pedir orçamento
+          </a>
+          <a href="#servicos" class="btn btn--outline btn--lg">Ver serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         2. SOBRE
+    ══════════════════════════════════════════════ -->
+    <section id="sobre" class="sobre section-light">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__texto reveal">
+            <span class="section-tag">Quem somos</span>
+            <h2 class="section-title">Experiência e compromisso<br />em cada obra</h2>
+            <p>
+              A <strong>JGM Construções</strong> é uma empresa especializada em reforma e construção civil,
+              comprometida em entregar obras com <strong>alto padrão de qualidade</strong>, dentro do
+              prazo combinado e com orçamento transparente.
+            </p>
+            <p>
+              [EDITAR: parágrafo sobre a história da empresa, fundação, responsável, diferenciais locais, etc.]
+            </p>
+            <a href="#" class="btn btn--laranja js-whatsapp"
+              data-msg="Olá! Gostaria de conhecer melhor a JGM Construções.">
+              Fale conosco
+            </a>
+          </div>
+
+          <div class="sobre__cards reveal">
+            <div class="valor-card">
+              <div class="valor-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h3>Qualidade</h3>
+              <p>Materiais selecionados e mão de obra qualificada em cada etapa.</p>
+            </div>
+            <div class="valor-card">
+              <div class="valor-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3>Prazo</h3>
+              <p>Cronograma rigoroso: começamos e terminamos no combinado.</p>
+            </div>
+            <div class="valor-card">
+              <div class="valor-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                </svg>
+              </div>
+              <h3>Orçamento justo</h3>
+              <p>Proposta detalhada, sem surpresas no meio da obra.</p>
+            </div>
+            <div class="valor-card">
+              <div class="valor-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3>Garantia</h3>
+              <p>Serviços com garantia pós-obra. Seu investimento protegido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         3. SERVIÇOS
+    ══════════════════════════════════════════════ -->
+    <section id="servicos" class="servicos section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag section-tag--light">O que fazemos</span>
+          <h2 class="section-title section-title--light">Serviços completos em<br />reforma e construção</h2>
+        </div>
+
+        <div class="servicos__grid">
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3>Reformas residenciais</h3>
+            <p>Do banheiro à casa inteira: modernizamos seu lar com qualidade e capricho.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Reforma Residencial da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="16" />
+                <line x1="10" y1="14" x2="14" y2="14" />
+              </svg>
+            </div>
+            <h3>Reformas comerciais</h3>
+            <p>Lojas, escritórios e galpões reformados com eficiência e mínima interrupção.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Reforma Comercial da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3>Construção do zero / obra nova</h3>
+            <p>Erguemos sua edificação do alicerce ao acabamento com estrutura sólida.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse em Construção de Obra Nova pela JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+              </svg>
+            </div>
+            <h3>Pintura (interna e externa)</h3>
+            <p>Preparação, textura e pintura profissional que valoriza o imóvel.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Pintura da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 21V9" />
+              </svg>
+            </div>
+            <h3>Alvenaria e estrutura</h3>
+            <p>Paredes, pilares e vigas executados com precisão e materiais de primeira.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Alvenaria e Estrutura da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 9h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                <path d="M3 9l2.45-4.9A2 2 0 017.24 3h9.52a2 2 0 011.8 1.1L21 9" />
+              </svg>
+            </div>
+            <h3>Acabamentos (gesso, drywall, forros)</h3>
+            <p>Reboco, gesso liso, drywall e forros com acabamento impecável.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Acabamentos (gesso/drywall) da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="8" height="8" />
+                <rect x="14" y="2" width="8" height="8" />
+                <rect x="2" y="14" width="8" height="8" />
+                <rect x="14" y="14" width="8" height="8" />
+              </svg>
+            </div>
+            <h3>Pisos e revestimentos</h3>
+            <p>Porcelanatos, cerâmicas, laminados e pedras naturais — assentamento perfeito.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Pisos e Revestimentos da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="3 8 12 3 21 8" />
+                <line x1="3" y1="8" x2="3" y2="20" />
+                <line x1="21" y1="8" x2="21" y2="20" />
+                <path d="M3 20c0 0 4.5-3 9-3s9 3 9 3" />
+                <line x1="3" y1="8" x2="21" y2="8" />
+              </svg>
+            </div>
+            <h3>Telhados e coberturas</h3>
+            <p>Instalação, reforma e impermeabilização de telhados com material certificado.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Telhados e Coberturas da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+
+          <article class="servico-card reveal">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                <path d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <h3>Impermeabilização</h3>
+            <p>Lajes, calhas, banheiros e caixas d'água protegidos contra umidade e infiltração.</p>
+            <a href="#" class="servico-card__cta js-whatsapp"
+              data-msg="Olá! Tenho interesse no serviço de Impermeabilização da JGM. Pode me passar um orçamento?">
+              Solicitar orçamento →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         4. DIFERENCIAIS
+    ══════════════════════════════════════════════ -->
+    <section class="diferenciais section-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Por que a JGM</span>
+          <h2 class="section-title">O que nos diferencia</h2>
+        </div>
+        <div class="diferenciais__grid">
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                <path d="M16 3.13a4 4 0 010 7.75" />
+              </svg>
+            </div>
+            <h3>Equipe qualificada</h3>
+            <p>Profissionais treinados e experientes em cada especialidade da construção.</p>
+          </div>
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Materiais de qualidade</h3>
+            <p>Usamos apenas materiais de procedência comprovada e marcas confiáveis.</p>
+          </div>
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3>Cumprimento de prazo</h3>
+            <p>Cronograma detalhado e respeito rigoroso às datas combinadas em contrato.</p>
+          </div>
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 14l6-6M9.5 8.5a.5.5 0 110-1 .5.5 0 010 1zm5 5a.5.5 0 110-1 .5.5 0 010 1z" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
+            <h3>Orçamento sem compromisso</h3>
+            <p>Vistoria e proposta detalhada grátis, sem pressão para fechar.</p>
+          </div>
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+              </svg>
+            </div>
+            <h3>Toda a região metropolitana</h3>
+            <p>Atendemos Curitiba e mais de 10 municípios da Grande Curitiba.</p>
+          </div>
+
+          <div class="diferencial-item reveal">
+            <div class="diferencial-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6" />
+                <path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2" />
+              </svg>
+            </div>
+            <h3>Limpeza pós-obra</h3>
+            <p>Entregamos o ambiente limpo e pronto para você usar no primeiro dia.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         5. STATS / NÚMEROS
+    ══════════════════════════════════════════════ -->
+    <section class="stats section-dark">
+      <div class="container stats__grid">
+
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="[EDITAR]" data-prefix="+" data-suffix="">+500</span>
+          <span class="stat-item__label">Obras entregues</span>
+        </div>
+
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="[EDITAR]" data-prefix="+" data-suffix=" anos">10 Anos</span>
+          <span class="stat-item__label">De experiência</span>
+        </div>
+
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="100" data-prefix="" data-suffix="%">0</span>
+          <span class="stat-item__label">Foco no cliente</span>
+        </div>
+
+        <div class="stat-item reveal">
+          <span class="stat-item__number" data-target="10" data-prefix="+" data-suffix="">0</span>
+          <span class="stat-item__label">Cidades atendidas</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         6. GALERIA DE OBRAS
+    ══════════════════════════════════════════════ -->
+    <section id="obras" class="galeria section-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title">Nossas obras</h2>
+          <p class="section-subtitle">Clique em qualquer foto para ampliar.</p>
+        </div>
+
+        <div class="galeria__grid" id="galeriaGrid">
+
+          <!-- TROCAR: foto real da obra 1 -->
+          <figure class="galeria__item reveal"
+            data-src="assets/img/reforma1.jpeg"
+            data-caption="Construção">
+            <img src="assets/img/reforma1.jpeg"
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+          </figure>
+
+          <!-- TROCAR: foto real da obra 2 -->
+           <figure class="galeria__item reveal"
+            data-src="assets/img/reforma2.jpeg"
+            data-caption="Pisos">
+            <img src="assets/img/reforma2.jpeg"
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+          </figure>
+
+          <!-- TROCAR: foto real da obra 3 -->
+          
+           <figure class="galeria__item reveal"
+            data-src="assets/img/reforma3.jpeg"
+            data-caption="Pisos">
+            <img src="assets/img/reforma3.jpeg"
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+          </figure>
+
+          <!-- TROCAR: foto real da obra 4 -->
+           <figure class="galeria__item reveal"
+            data-src="assets/img/reforma4.jpeg"
+            data-caption="Pintura externa">
+            <img src="assets/img/reforma4.jpeg "
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+          </figure>
+
+          <!-- TROCAR: foto real da obra 5 -->
+          <figure class="galeria__item reveal"
+            data-src="assets/img/reforma5.jpeg"
+            data-caption="Área de lazer">
+            <img src="assets/img/reforma5.jpeg"
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+          </figure>
+
+          <!-- TROCAR: foto real da obra 6 -->
+          <figure class="galeria__item reveal"
+            data-src="assets/img/reforma6.jpeg"
+            data-caption="Reformas">
+            <img src="assets/img/reforma6.jpeg"
+              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
+            
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar foto ampliada" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">&#x2715;</button>
+      <button class="lightbox__prev" id="lightboxPrev" aria-label="Foto anterior">&#x2039;</button>
+      <button class="lightbox__next" id="lightboxNext" aria-label="Próxima foto">&#x203A;</button>
+      <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+      <figure class="lightbox__figure">
+        <img src="" alt="" id="lightboxImg" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+         7. ÁREA DE ATENDIMENTO
+    ══════════════════════════════════════════════ -->
+    <section class="atendimento section-dark">
+      <div class="container atendimento__inner reveal">
+        <div class="atendimento__texto">
+          <span class="section-tag section-tag--light">Onde atuamos</span>
+          <h2 class="section-title section-title--light">Curitiba e toda a<br />Região Metropolitana</h2>
+          <p>
+            A JGM Construções atua em toda a Grande Curitiba, levando a mesma qualidade
+            de obra a todos os municípios da região.
+          </p>
+          <a href="#" class="btn btn--laranja js-whatsapp"
+            data-msg="Olá! Gostaria de verificar se a JGM atende minha cidade e solicitar um orçamento.">
+            Verificar minha cidade
+          </a>
+        </div>
+        <ul class="atendimento__lista">
+          <li><span class="pin" aria-hidden="true">📍</span>Curitiba</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Almirante Tamandaré</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Colombo</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Pinhais</li>
+          <li><span class="pin" aria-hidden="true">📍</span>São José dos Pinhais</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Araucária</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Campo Largo</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Campo Magro</li>
+          <li><span class="pin" aria-hidden="true">📍</span>Rio Branco do Sul</li>
+          <li><span class="pin" aria-hidden="true">📍</span>E região</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         8. DEPOIMENTOS
+    ══════════════════════════════════════════════ -->
+    <section class="depoimentos section-light">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Clientes</span>
+          <h2 class="section-title">O que dizem sobre nós</h2>
+        </div>
+        <div class="depoimentos__grid">
+
+          <blockquote class="depoimento-card reveal">
+            <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>
+              "[EDITAR: depoimento real do cliente 1]"
+            </p>
+            <footer>
+              <strong>[EDITAR: Nome do cliente 1]</strong>
+              <span>[EDITAR: Bairro/cidade, ex: Portão — Curitiba]</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="depoimento-card reveal">
+            <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>
+              "[EDITAR: depoimento real do cliente 2]"
+            </p>
+            <footer>
+              <strong>[EDITAR: Nome do cliente 2]</strong>
+              <span>[EDITAR: Bairro/cidade]</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="depoimento-card reveal">
+            <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p>
+              "[EDITAR: depoimento real do cliente 3]"
+            </p>
+            <footer>
+              <strong>[EDITAR: Nome do cliente 3]</strong>
+              <span>[EDITAR: Bairro/cidade]</span>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         9. CTA FINAL
+    ══════════════════════════════════════════════ -->
+    <section class="cta-final">
+      <div class="container cta-final__inner reveal">
+        <h2>Vamos tirar sua obra do papel?</h2>
+        <p>Orçamento grátis e sem compromisso. Fale com a JGM agora pelo WhatsApp.</p>
+        <a href="#" class="btn btn--branco btn--xl js-whatsapp"
+          data-msg="Olá! Quero tirar minha obra do papel. Pode me passar um orçamento?"
+          aria-label="Solicitar orçamento pelo WhatsApp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Solicitar orçamento grátis
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         10. TRABALHE CONOSCO (BANNER)
+    ══════════════════════════════════════════════ -->
+    <section class="trabalhe-banner">
+      <div class="container trabalhe-banner__inner reveal">
+        <span class="section-tag">Oportunidades</span>
+        <h2 class="section-title">Trabalhe Conosco</h2>
+        <p class="trabalhe-banner__text">
+          Quer fazer parte da JGM Construções? Estamos sempre em busca de profissionais talentosos e dedicados para integrar nossa equipe. Envie seu currículo e cadastre-se para futuras vagas.
+        </p>
+        <button type="button" id="btnOpenTrabalhe" class="btn btn--laranja btn--lg">
+          Quero me candidatar
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer id="contato" class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <img src="assets/logo-footer.png" alt="Logo JGM Construções" height="48" loading="lazy" />
+        <p>Reforma e construção civil em Curitiba e Região Metropolitana do Paraná.</p>
+        <div class="footer__social">
+          <a href="[EDITAR: URL Instagram]" target="_blank" rel="noopener" aria-label="Instagram da JGM Construções">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+          </a>
+          <a href="[EDITAR: URL Facebook]" target="_blank" rel="noopener" aria-label="Facebook da JGM Construções">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#obras">Obras</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" id="footerTrabalheLink">Trabalhe Conosco</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contato">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+              aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 10.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.44 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z" />
+            </svg>
+            <!-- EDITAR: número real do WhatsApp -->
+            <a href="#" class="js-whatsapp" data-msg="Olá! Vim pelo site e gostaria de um orçamento.">(41)98511-8232</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+              aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:[EDITAR: e-mail]">jgmconstrucoes2025@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+              aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Curitiba e Região Metropolitana — PR
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="footerYear"></span> JGM Construções — Construções no geral. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="#" id="waFloat" class="wa-float js-whatsapp"
+    data-msg="Olá! Vim pelo site da JGM Construções e gostaria de um orçamento."
+    aria-label="Falar com a JGM pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- ══════════════════════════════════════════════
+       POPUP TRABALHE CONOSCO (FULL-PAGE)
+  ══════════════════════════════════════════════ -->
+  <div id="trabalhePopup" class="trabalhe-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="trabalhePopupTitle" hidden>
+    <!-- Header Fixo do Popup -->
+    <header class="trabalhe-popup__header">
+      <div class="container trabalhe-popup__header-inner">
+        <button type="button" id="btnCloseTrabalhe" class="trabalhe-popup__back-btn" aria-label="Voltar para o site">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Voltar para o site</span>
+        </button>
+        <img src="assets/logo-header.png" alt="Logo JGM Construções" class="trabalhe-popup__logo" />
+      </div>
+    </header>
+
+    <!-- Conteúdo do Popup -->
+    <main class="trabalhe-popup__main">
+      <div class="container trabalhe-popup__container">
+        <div id="trabalheFormWrapper" class="trabalhe-popup__card">
+          <div class="trabalhe-popup__intro">
+            <span class="section-tag">Faça parte do time</span>
+            <h2 id="trabalhePopupTitle" class="section-title">Envie seu Currículo</h2>
+            <p class="trabalhe-popup__desc">
+              Preencha o formulário abaixo com seus dados de contato e informações profissionais. Entraremos em contato assim que surgir uma vaga compatível com seu perfil.
+            </p>
+          </div>
+
+          <!-- Formspree Form -->
+          <form id="trabalheForm" action="https://formspree.io/f/xaqrjqwj" method="POST" class="trabalhe-form">
+            <div class="form-grid">
+              <!-- Nome -->
+              <div class="form-group">
+                <label for="trabNome">Nome Completo <span class="required">*</span></label>
+                <input type="text" id="trabNome" name="nome" required placeholder="Digite seu nome completo" />
+              </div>
+
+              <!-- E-mail -->
+              <div class="form-group">
+                <label for="trabEmail">E-mail <span class="required">*</span></label>
+                <input type="email" id="trabEmail" name="email" required placeholder="exemplo@email.com" />
+              </div>
+
+              <!-- Telefone -->
+              <div class="form-group">
+                <label for="trabFone">Telefone / WhatsApp <span class="required">*</span></label>
+                <input type="tel" id="trabFone" name="telefone" required placeholder="(41) 99999-9999" />
+              </div>
+
+              <!-- Função/Cargo -->
+              <div class="form-group">
+                <label for="trabCargo">Área de Interesse <span class="required">*</span></label>
+                <div class="select-wrapper">
+                  <select id="trabCargo" name="cargo" required>
+                    <option value="" disabled selected>Selecione sua especialidade</option>
+                    <option value="pedreiro">Pedreiro</option>
+                    <option value="servente">Servente / Ajudante</option>
+                    <option value="mestre-de-obras">Mestre de Obras</option>
+                    <option value="pintor">Pintor</option>
+                    <option value="gesseiro-drywall">Gesseiro / Drywall</option>
+                    <option value="eletricista-encanador">Eletricista / Encanador</option>
+                    <option value="engenheiro-arquiteto">Engenheiro / Arquiteto</option>
+                    <option value="administrativo">Administrativo / RH / Financeiro</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiência / Mensagem -->
+            <div class="form-group">
+              <label for="trabMensagem">Fale brevemente sobre sua experiência</label>
+              <textarea id="trabMensagem" name="mensagem" rows="4" placeholder="Conte-nos sobre sua experiência profissional. Se quiser, deixe também um link do seu currículo (Google Drive, LinkedIn, etc)."></textarea>
+            </div>
+
+            <!-- LGPD Consent -->
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" name="lgpd_consent" required value="aceito" />
+                <span>Autorizo o uso dos meus dados pessoais fornecidos acima para a finalidade exclusiva de recrutamento e seleção da JGM Construções, em conformidade com a LGPD. <span class="required">*</span></span>
+              </label>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit" id="btnSubmitTrabalhe" class="btn btn--laranja btn--lg btn--block">
+              <span id="btnSubmitTrabalheText">Enviar Candidatura</span>
+              <div class="spinner" id="btnSubmitTrabalheSpinner" hidden></div>
+            </button>
+            
+            <p class="form-notice">Campos marcados com <span class="required">*</span> são obrigatórios.</p>
+          </form>
+        </div>
+
+        <!-- Tela de Sucesso -->
+        <div id="trabalheSuccess" class="trabalhe-popup__success" hidden>
+          <div class="success-card">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="48" height="48" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h2>Currículo Enviado!</h2>
+            <p>Agradecemos o seu interesse em fazer parte da <strong>JGM Construções</strong>. Seus dados foram salvos com sucesso e entraremos em contato assim que tivermos uma vaga compatível com seu perfil.</p>
+            <button type="button" id="btnSuccessClose" class="btn btn--laranja btn--lg">
+              Voltar ao site
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
