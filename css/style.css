@@ -35,6 +35,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* compensa o header fixo nas âncoras */
 }
 
 body {
@@ -222,9 +223,9 @@ button {
   left: 0;
   right: 0;
   z-index: 900;
-  background: rgba(26, 10, 10, .92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(26, 10, 10, .96);
+  /* backdrop-filter removido: cria containing block e quebra o
+     position:fixed do .header__nav.open no mobile */
   border-bottom: 1px solid rgba(240, 96, 16, .15);
   transition: padding var(--transition), background var(--transition);
 }
@@ -1416,9 +1417,8 @@ body.trabalhe-open {
     position: fixed;
     inset: 0;
     top: 71px;
-    background: linear-gradient(160deg, var(--marrom-escuro) 0%, var(--marrom-2) 55%, #2A0D00 100%);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    background: linear-gradient(160deg, var(--marrom-escuro) 0%, #2A0D00 45%, #4A1600 85%, rgba(240, 96, 16, .35) 130%);
+    overscroll-behavior: contain;
     flex-direction: column;
     align-items: center;
     justify-content: center;
