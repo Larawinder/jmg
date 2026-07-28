@@ -1399,6 +1399,7 @@ body.trabalhe-open {
 
   .header__nav {
     display: none;
+    pointer-events: none;
   }
 
   .header__hamburger {
@@ -1411,6 +1412,7 @@ body.trabalhe-open {
 
   .header__nav.open {
     display: flex;
+    pointer-events: auto;
     position: fixed;
     inset: 0;
     top: 71px;
@@ -1469,7 +1471,6 @@ body.trabalhe-open {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 /* ══════════════════════════════════════════════
    RESPONSIVO — MOBILE (≤ 640px)
 ══════════════════════════════════════════════ */
