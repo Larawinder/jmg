@@ -28,6 +28,33 @@ function initHeader() {
   const hamburger = document.getElementById('hamburger');
   const nav       = document.getElementById('mainNav');
 
+  let savedScrollY = 0;
+
+  // Trava o scroll de verdade (funciona no Safari iOS,
+  // onde body{overflow:hidden} não segura o toque)
+  function lockScroll() {
+    savedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${savedScrollY}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+  }
+
+  function unlockScroll() {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    // desliga o smooth momentaneamente pra restaurar sem "pulo" animado
+    const htmlEl = document.documentElement;
+    const prevBehavior = htmlEl.style.scrollBehavior;
+    htmlEl.style.scrollBehavior = 'auto';
+    window.scrollTo(0, savedScrollY);
+    htmlEl.style.scrollBehavior = prevBehavior;
+  }
+
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 40);
   }, { passive: true });
@@ -36,7 +63,7 @@ function initHeader() {
     const open = nav.classList.toggle('open');
     hamburger.classList.toggle('open', open);
     hamburger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) lockScroll(); else unlockScroll();
   });
 
   nav.querySelectorAll('a').forEach(link => {
@@ -44,7 +71,8 @@ function initHeader() {
       nav.classList.remove('open');
       hamburger.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
+      unlockScroll();
+      // deixa a âncora navegar depois que o scroll foi restaurado
     });
   });
 }
