@@ -138,6 +138,40 @@ function initCounters() {
 }
 
 /* ══════════════════════════════════════════════
+   GALERIA — CARROSSEL
+══════════════════════════════════════════════ */
+function initGaleriaCarrossel() {
+  const track = document.getElementById('galeriaGrid');
+  const prev  = document.getElementById('galeriaPrev');
+  const next  = document.getElementById('galeriaNext');
+
+  if (!track || !prev || !next) return;
+
+  function passo() {
+    const item = track.querySelector('.galeria__item');
+    if (!item) return track.clientWidth;
+    const estilo = getComputedStyle(track);
+    const gap = parseFloat(estilo.columnGap || estilo.gap) || 16;
+    return item.getBoundingClientRect().width + gap;
+  }
+
+  function atualizar() {
+    const max = track.scrollWidth - track.clientWidth - 2;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max;
+  }
+
+  prev.addEventListener('click', () => track.scrollBy({ left: -passo(), behavior: 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left:  passo(), behavior: 'smooth' }));
+
+  track.addEventListener('scroll', () => requestAnimationFrame(atualizar), { passive: true });
+  window.addEventListener('resize', atualizar);
+  window.addEventListener('load', atualizar);
+
+  atualizar();
+}
+
+/* ══════════════════════════════════════════════
    LIGHTBOX
 ══════════════════════════════════════════════ */
 function initLightbox() {
@@ -372,6 +406,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initScrollReveal();
   initCounters();
+  initGaleriaCarrossel();
   initLightbox();
   initWaFloat();
   initSmoothScroll();
