@@ -37,7 +37,7 @@
 
   <!-- CSS -->
 <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
@@ -476,61 +476,116 @@
         <div class="section-header reveal">
           <span class="section-tag">Portfólio</span>
           <h2 class="section-title">Nossas obras</h2>
-          <p class="section-subtitle">Clique em qualquer foto para ampliar.</p>
+          <p class="section-subtitle">Arraste ou use as setas. Clique na foto para ampliar.</p>
         </div>
 
-        <div class="galeria__grid" id="galeriaGrid">
+        <div class="galeria__carrossel reveal">
+          <button class="galeria__nav galeria__nav--prev" id="galeriaPrev" aria-label="Fotos anteriores">&#x2039;</button>
 
-          <!-- TROCAR: foto real da obra 1 -->
-          <figure class="galeria__item reveal"
-            data-src="assets/img/reforma1.jpeg"
-            data-caption="Construção">
-            <img src="assets/img/reforma1.jpeg"
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-          </figure>
+          <div class="galeria__track" id="galeriaGrid">
 
-          <!-- TROCAR: foto real da obra 2 -->
-           <figure class="galeria__item reveal"
-            data-src="assets/img/reforma2.jpeg"
-            data-caption="Pisos">
-            <img src="assets/img/reforma2.jpeg"
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-          </figure>
+            <figure class="galeria__item" data-src="assets/img/reforma1.jpeg" data-caption="Construção">
+              <img src="assets/img/reforma1.jpeg" alt="Obra da JGM Construções em Curitiba — Construção" loading="eager" />
+            </figure>
 
-          <!-- TROCAR: foto real da obra 3 -->
-          
-           <figure class="galeria__item reveal"
-            data-src="assets/img/reforma3.jpeg"
-            data-caption="Pisos">
-            <img src="assets/img/reforma3.jpeg"
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-          </figure>
+            <figure class="galeria__item" data-src="assets/img/reforma2.jpeg" data-caption="Pisos">
+              <img src="assets/img/reforma2.jpeg" alt="Obra da JGM Construções em Curitiba — Pisos" loading="eager" />
+            </figure>
 
-          <!-- TROCAR: foto real da obra 4 -->
-           <figure class="galeria__item reveal"
-            data-src="assets/img/reforma4.jpeg"
-            data-caption="Pintura externa">
-            <img src="assets/img/reforma4.jpeg "
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-          </figure>
+            <figure class="galeria__item" data-src="assets/img/reforma3.jpeg" data-caption="Pisos">
+              <img src="assets/img/reforma3.jpeg" alt="Obra da JGM Construções em Curitiba — Pisos" loading="eager" />
+            </figure>
 
-          <!-- TROCAR: foto real da obra 5 -->
-          <figure class="galeria__item reveal"
-            data-src="assets/img/reforma5.jpeg"
-            data-caption="Área de lazer">
-            <img src="assets/img/reforma5.jpeg"
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-          </figure>
+            <figure class="galeria__item" data-src="assets/img/reforma4.jpeg" data-caption="Pintura externa">
+              <img src="assets/img/reforma4.jpeg" alt="Obra da JGM Construções em Curitiba — Pintura externa" loading="lazy" />
+            </figure>
 
-          <!-- TROCAR: foto real da obra 6 -->
-          <figure class="galeria__item reveal"
-            data-src="assets/img/reforma6.jpeg"
-            data-caption="Reformas">
-            <img src="assets/img/reforma6.jpeg"
-              alt="Obra de reforma residencial em Curitiba" loading="lazy" />
-            
-          </figure>
+            <figure class="galeria__item" data-src="assets/img/reforma5.jpeg" data-caption="Área de lazer">
+              <img src="assets/img/reforma5.jpeg" alt="Obra da JGM Construções em Curitiba — Área de lazer" loading="lazy" />
+            </figure>
 
+            <figure class="galeria__item" data-src="assets/img/reforma6.jpeg" data-caption="Reformas">
+              <img src="assets/img/reforma6.jpeg" alt="Obra da JGM Construções em Curitiba — Reformas" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma7.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma7.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma8.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma8.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma9.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma9.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma10.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma10.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma11.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma11.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma12.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma12.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma13.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma13.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma14.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma14.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma15.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma15.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma16.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma16.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma17.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma17.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma18.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma18.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma19.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma19.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma20.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma20.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+            <!-- [EDITAR] caption -->
+            <figure class="galeria__item" data-src="assets/img/reforma21.jpeg" data-caption="Obra JGM">
+              <img src="assets/img/reforma21.jpeg" alt="Obra da JGM Construções em Curitiba — Obra JGM" loading="lazy" />
+            </figure>
+
+          </div>
+
+          <button class="galeria__nav galeria__nav--next" id="galeriaNext" aria-label="Próximas fotos">&#x203A;</button>
         </div>
       </div>
     </section>
